@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UD EDITS — Video Editor Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Manrope', sans-serif;
+      background: #08070D;
+      color: #FFFFFF;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    .navbar {
+      position: fixed; top: 0; width: 100%; z-index: 100;
+      padding: 1.1rem 1.5rem;
+      background: rgba(8, 7, 13, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(147, 51, 234, 0.15);
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .logo { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.3rem; color: #FFF; text-decoration: none; }
+    .logo span { color: #A855F7; }
+    .nav-links a { color: #B9B1C5; text-decoration: none; margin-left: 1.2rem; font-size: 0.9rem; }
+    .hero {
+      min-height: 90vh; display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center; padding: 7rem 1.5rem 4rem;
+      background: radial-gradient(circle at center, rgba(147, 51, 234, 0.18) 0%, transparent 65%);
+    }
+    .label { font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase; color: #C4A1FF; margin-bottom: 1rem; }
+    .hero h1 { font-family: 'Space Grotesk', sans-serif; font-size: 2.8rem; line-height: 1.15; margin-bottom: 1.2rem; }
+    .hero h1 span { color: #A855F7; }
+    .hero p { color: #B9B1C5; max-width: 520px; margin-bottom: 2rem; font-size: 1rem; }
+    .btn {
+      background: linear-gradient(135deg, #9333EA, #A855F7); color: #FFF;
+      padding: 0.9rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block;
+    }
+    .section { padding: 4.5rem 1.5rem; max-width: 900px; margin: 0 auto; text-align: center; }
+    .section h2 { font-family: 'Space Grotesk', sans-serif; font-size: 2.1rem; margin-bottom: 1rem; }
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 2rem; }
+    .stat-card { background: #1C1428; padding: 1.8rem; border-radius: 16px; border: 1px solid rgba(147, 51, 234, 0.2); text-align: left; }
+    .stat-card h3 { font-family: 'Space Grotesk', sans-serif; font-size: 2rem; color: #A855F7; margin-bottom: 0.3rem; }
+    .stat-card p { color: #B9B1C5; font-size: 0.95rem; }
+    .video-grid { display: flex; flex-direction: column; gap: 2rem; align-items: center; margin-top: 2rem; }
+    .video-card { background: #1C1428; padding: 1rem; border-radius: 18px; border: 1px solid rgba(168, 85, 247, 0.25); width: 100%; max-width: 360px; }
+    .video-card.wide { max-width: 650px; }
+    video { width: 100%; border-radius: 12px; display: block; background: #000; }
+    .video-title { text-align: left; margin-top: 0.8rem; font-weight: 600; font-size: 1rem; color: #FFF; }
+  </style>
+</head>
+  <body>
+  <nav class="navbar">
+    <a href="#" class="logo">UD <span>EDITS</span></a>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <p class="label">VIDEO EDITOR · STORYTELLER</p>
+    <h1>I TURN RAW CLIPS INTO <span>STORIES.</span></h1>
+    <p>Cinematic edits, sharp storytelling, and premium visual craft for creators and brands who care about how their content feels.</p>
+    <a href="#work" class="btn">Explore My Work →</a>
+  </section>
+
+  <section id="work" class="section">
+    <p class="label">SELECTED WORK</p>
+    <h2>Recent Edits</h2>
+    <p style="color: #B9B1C5;">A selection of projects — from fast-paced short form to cinematic storytelling.</p>
+    <div class="video-grid">
+      <div class="video-card">
+        <video src="video1.mp4" autoplay loop muted playsinline controls></video>
+        <p class="video-title">Edit 01 · High-Energy Short</p>
+      </div>
+      <div class="video-card">
+        <video src="video2.mp4" autoplay loop muted playsinline controls></video>
+        <p class="video-title">Edit 02 · Cinematic Reel</p>
+      </div>
+      <div class="video-card wide">
+        <video src="video3.mp4" autoplay loop muted playsinline controls></video>
+        <p class="video-title">Edit 03 · Storytelling Cut</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <p class="label">ABOUT</p>
+    <h2>Crafting emotion through the cut.</h2>
+    <p style="color: #B9B1C5; max-width: 600px; margin: 0 auto;">I'm UD — a video editor focused on turning ordinary footage into narratives that hold attention. Clean timelines, thoughtful color, and sound that supports the story.</p>
+    <div class="stats-grid">
+      <div class="stat-card"><h3>100%</h3><p>On-Time Delivery</p></div>
+      <div class="stat-card"><h3>24–48 Hrs</h3><p>Fast Turnaround</p></div>
+      <div class="stat-card"><h3>4K / 60fps</h3><p>High Quality Export</p></div>
+      <div class="stat-card"><h3>∞</h3><p>Creative Energy</p></div>
+    </div>
+  </section>
+
+  <section id="contact" class="section" style="background: #130D1C; max-width: 100%; border-top: 1px solid rgba(147,51,234,0.2);">
+    <p class="label">GET IN TOUCH</p>
+    <h2>Let's Work Together</h2>
+    <p style="color: #B9B1C5; margin-bottom: 2rem;">DM or message me directly to start your next video project.</p>
+    <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+      <a href="https://wa.me/919269424945?text=Hi%20UD%2C%20I%20want%20to%20discuss%20a%20video%20editing%20project" target="_blank" class="btn">💬 WhatsApp Me</a>
+      <a href="https://www.instagram.com/__uday___0000" target="_blank" class="btn" style="background: #1C1428; border: 1px solid #9333EA;">📸 Instagram</a>
+      <a href="mailto:udaym.6.2007@gmail.com" class="btn" style="background: #1C1428; border: 1px solid #9333EA;">✉️ Email Me</a>
+    </div>
+    <p style="color: #B9B1C5; font-size: 0.85rem; margin-top: 3rem; opacity: 0.7;">© 2026 UD EDITS. All rights reserved.</p>
+  </section>
+</body>
+</html>
+
